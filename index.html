@@ -3,101 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NaturaBelle Cosmetics - Celebrate Your Natural Glow</title>
+  <title>NaturaBelle Signup Form</title>
   <style>
-    /* Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
-
-    :root {
-      --primary-gradient: linear-gradient(135deg, #84fab0 0%, #2d6a4f 100%);
-      --button-gradient: linear-gradient(135deg, #2d6a4f 0%, #40916c 100%);
-      --brand-font: 'Playfair Display', serif;
-      --body-font: 'Open Sans', sans-serif;
+    /* Wrapper background */
+    .nb-signup-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      background: #f8fafc;
     }
 
-    body {
-      margin: 0;
-      font-family: var(--body-font);
-      background: #f9fff9;
-      color: #333;
+    /* Signup box layout */
+    .nb-signup-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      max-width: 520px;
+      padding: 30px;
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    /* Logo (1x1) */
+    .nb-logo {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    /* Product image (2x2) */
+    .nb-product {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    /* Headline */
+    .nb-headline {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #14532d;
+      margin: 10px 0 5px 0;
       text-align: center;
     }
 
-    header {
-      padding: 40px 20px;
-      background: var(--primary-gradient);
-      color: white;
-    }
-
-    header img {
-      max-width: 120px;
+    /* Tagline */
+    .nb-tagline {
+      font-size: 1rem;
+      font-style: italic;
+      color: #059669; /* fresh green tone */
       margin-bottom: 15px;
+      text-align: center;
     }
 
-    header h1 {
-      font-family: var(--brand-font);
-      font-size: 2.8rem;
-      margin-bottom: 10px;
+    /* Subheadline */
+    .nb-subheadline {
+      font-size: 1rem;
+      color: #475569;
+      margin-bottom: 20px;
+      text-align: center;
+      line-height: 1.5;
     }
 
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.95;
+    /* Klaviyo form overrides */
+    .klaviyo-form-YwNP7f input[type="email"],
+    .klaviyo-form-YwNP7f input[type="text"] {
+      width: 100% !important;
+      padding: 12px 15px !important;
+      border: 1px solid #cbd5e1 !important;
+      border-radius: 10px !important;
+      font-size: 1rem !important;
+      margin-bottom: 15px !important;
     }
 
-    .container {
-      max-width: 500px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    /* CTA Button */
+    .klaviyo-form-YwNP7f button,
+    .klaviyo-form-YwNP7f input[type="submit"] {
+      width: 100% !important;
+      padding: 14px !important;
+      font-size: 1rem !important;
+      font-weight: 600 !important;
+      color: #ffffff !important;
+      border: none !important;
+      border-radius: 12px !important;
+      cursor: pointer !important;
+      background: linear-gradient(90deg, #34D399, #059669) !important;
+      transition: all 0.3s ease-in-out !important;
     }
 
-    .container h2 {
-      font-family: var(--brand-font);
-      margin-bottom: 15px;
-      color: #2d6a4f;
-    }
-
-    .product-img {
-      margin: 20px 0;
-      max-width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    }
-
-    .note {
-      font-size: 0.9rem;
-      color: #666;
-      margin-top: 15px;
+    .klaviyo-form-YwNP7f button:hover,
+    .klaviyo-form-YwNP7f input[type="submit"]:hover {
+      opacity: 0.9 !important;
     }
   </style>
 </head>
 <body>
+  <div class="nb-signup-wrapper">
+    <div class="nb-signup-box">
+      
+      <!-- Logo -->
+      <img src="YOUR-LOGO.png" alt="NaturaBelle Logo" class="nb-logo">
 
-  <header>
-    <!-- ✅ Replace with your actual logo URL -->
-    <img src="https://raw.githubusercontent.com/barriosrachelle11/practice/main/Gemini_Generated_Image_6a6w1u6a6w1u6a6w-removebg-preview.png" alt="NaturaBelle Logo">
-    <h1>NaturaBelle Cosmetics</h1>
-    <p>✨ Celebrate Your Natural Glow ✨</p>
-  </header>
+      <!-- Product image -->
+      <img src="YOUR-PRODUCT.png" alt="Featured Product" class="nb-product">
 
-  <div class="container">
-    <h2>Join Our Beauty Circle</h2>
-    <p>Get exclusive tips, natural skincare secrets, and <strong>10% off your first order</strong> when you sign up!</p>
+      <!-- Headline -->
+      <h2 class="nb-headline">✨ Glow Naturally With Us</h2>
 
-    <!-- ✅ Add Product Image -->
-    <img class="product-img" src="https://raw.githubusercontent.com/barriosrachelle11/practice/main/Gemini_Generated_Image_ed4ylged4ylged4y.png" alt="NaturaBelle Products">
+      <!-- Tagline -->
+      <p class="nb-tagline">Celebrate Your Natural Glow</p>
 
-    <!-- ✅ Klaviyo Embedded Form -->
-    <div class="klaviyo-form-XkwEjn"></div>
-    <script src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=XhnrUi" async></script>
-    <!-- ✅ End Klaviyo Embed -->
+      <!-- Subheadline -->
+      <p class="nb-subheadline">
+        Sign up today to unlock exclusive offers, beauty tips, 
+        and early access to our best-selling products.
+      </p>
 
-    <p class="note">Your details are safe with us. Unsubscribe anytime.</p>
+      <!-- Klaviyo Form Embed -->
+      <div class="klaviyo-form-YwNP7f"></div>
+    </div>
   </div>
-
 </body>
 </html>
-
